@@ -19,5 +19,10 @@ sudo chgrp -R ${USER} ~/.ssh/
 # chgrp: This command is used to change the group ownership of a file or directory.
 # -R: The -R flag indicates that the operation should be performed recursively, affecting all files and subdirectories within ~/.ssh/.
 #
+# Summary
+#
+# In summary, these commands are used to ensure that your SSH configuration directory (~/.ssh/) and its contents are only accessible and modifiable by you, the owner, for security reasons. This is important to protect your SSH keys and configuration files from unauthorized access or modification.
+#
+#
 #
 #
