@@ -4,3 +4,12 @@ sudo chmod 700 ~/.ssh/
 sudo chmod 600 ~/.ssh/*
 sudo chown -R ${USER} ~/.ssh/
 sudo chgrp -R ${USER} ~/.ssh/
+
+# Explanation
+#
+#
+# sudo chmod 700 ~/.ssh/:
+
+# sudo: This command is used to execute the following command with superuser privileges, allowing you to modify system files and settings.
+# chmod: This command is used to change file or directory permissions.
+# 700: The argument 700 sets the permissions for the ~/.ssh/ directory. In this case, it grants read, write, and execute permissions to the owner of the directory (you), and no permissions to anyone else. These permissions are represented as 7 for the owner, 0 for the group, and 0 for others. It ensures that only the owner has full control over the directory, which is essential for SSH security.
