@@ -6,22 +6,29 @@ sudo chown -R ${USER} ~/.ssh/
 sudo chgrp -R ${USER} ~/.ssh/
 
 # Explanation
-#
-#
-# sudo chmod 700 ~/.ssh/:
 
 # sudo: This command is used to execute the following command with superuser privileges, allowing you to modify system files and settings.
-# chmod: This command is used to change file or directory permissions.
-# 700: The argument 700 sets the permissions for the ~/.ssh/ directory. In this case, it grants read, write, and execute permissions to the owner of the directory (you), and no permissions to anyone else. These permissions are represented as 7 for the owner, 0 for the group, and 0 for others. It ensures that only the owner has full control over the directory, which is essential for SSH security.
-# 600: The argument 600 sets the permissions for all files inside the ~/.ssh/ directory. It grants read and write permissions only to the owner (you) and no permissions to the group or others. This ensures that the contents of the ~/.ssh/ directory are only accessible and modifiable by the owner.
 
-# ${USER}: This is a shell variable that typically represents the current user's username. It's used here to set the owner of the ~/.ssh/ directory to the current user, ensuring that you have full ownership and control over your SSH configuration files.
+# chmod: This command is used to change file or directory permissions.
+
+# 700: The argument 700 sets the permissions for the ~/.ssh/ directory. In this case, it grants read, write, and execute permissions
+# to the owner of the directory (you), and no permissions to anyone else. These permissions are represented as 7 for the owner,
+# 0 for the group, and 0 for others. It ensures that only the owner has full control over the directory, which is essential for SSH security.
+
+# 600: The argument 600 sets the permissions for all files inside the ~/.ssh/ directory.
+# It grants read and write permissions only to the owner (you) and no permissions to the group or others. 
+# This ensures that the contents of the ~/.ssh/ directory are only accessible and modifiable by the owner.
+
+# ${USER}: This is a shell variable that typically represents the current user's username. It's used here to set the owner of the ~/.ssh/ 
+# directory to the current user, ensuring that you have full ownership and control over your SSH configuration files.
 # chgrp: This command is used to change the group ownership of a file or directory.
 # -R: The -R flag indicates that the operation should be performed recursively, affecting all files and subdirectories within ~/.ssh/.
 #
 # Summary
 #
-# In summary, these commands are used to ensure that your SSH configuration directory (~/.ssh/) and its contents are only accessible and modifiable by you, the owner, for security reasons. This is important to protect your SSH keys and configuration files from unauthorized access or modification.
+# In summary, these commands are used to ensure that your SSH configuration directory (~/.ssh/) and its contents are only accessible
+# and modifiable by you, the owner, for security reasons. This is important to protect your SSH keys and configuration files 
+# from unauthorized access or modification.
 #
 #
 #
