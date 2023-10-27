@@ -1,0 +1,6 @@
+# this will fix the permits for git using sshkeys in a remote vps with a local user.
+
+sudo chmod 700 ~/.ssh/
+sudo chmod 600 ~/.ssh/*
+sudo chown -R ${USER} ~/.ssh/
+sudo chgrp -R ${USER} ~/.ssh/
